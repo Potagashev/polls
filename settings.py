@@ -9,8 +9,8 @@ DB_PASSWORD = os.environ.get('POSTGRES_PASSWORD')
 DB_HOST = os.environ.get('POSTGRES_HOST')
 DB_PORT = os.environ.get('POSTGRES_PORT')
 
-# SQLALCHEMY_DATABASE_URL = "postgresql://postgres:postgrespw@localhost:49153"
-SQLALCHEMY_DATABASE_URL = f"postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}"
+# SQLALCHEMY_DATABASE_URL = "postgresql://postgres:postgrespw@localhost:5432"
+SQLALCHEMY_DATABASE_URL = f"postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:5432"
 
 JWT_SECRET = 'secret'
 JWT_ALGORITHM = 'HS256'
